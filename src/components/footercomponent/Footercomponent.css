@@ -1,0 +1,31 @@
+.footer-custom {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Space between columns */
+.footer-item {
+  margin-bottom: 20px;
+}
+
+/* Add spacing between each <p> */
+.footer-item p {
+  margin: 8px 0;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.footer-item p:hover {
+  color: #0d6efd; /* Bootstrap primary blue */
+  transform: translateX(5px);
+}
+
+/* Add more breathing room between icons/images */
+.hover-zoom {
+  transition: transform 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}

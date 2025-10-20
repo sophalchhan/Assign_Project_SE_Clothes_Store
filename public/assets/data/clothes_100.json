@@ -1,0 +1,1044 @@
+{
+  "clothes": [
+    {
+      "id": 1,
+      "name": "Casual Summer Dress",
+      "price": 29.99,
+      "image": "https://www-s.mlo.me/upen/vs/2023/202303/20230310/202303101533451834274.webp",
+      "category": "Dresses",
+      "size": "M",
+      "type": "Women",
+      "description": "Lightweight summer dress perfect for casual outings."
+    },
+    {
+      "id": 2,
+      "name": "Classic Denim Jacket",
+      "price": 49.99,
+      "image": "https://www.workshop.co.nz/cdn/shop/files/Workshop-Denim-Mens-W7349-TPJdr-Classic-Denim-Jacket-Dark-Rinse-Dark-Indigo-3_490x615.jpg?v=1692676446",
+      "category": "Jackets",
+      "size": "L",
+      "type": "Men",
+      "description": "Stylish denim jacket suitable for all seasons."
+    },
+    {
+      "id": 3,
+      "name": "Cozy Hoodie",
+      "price": 35.59,
+      "image": "https://lewkin.com/cdn/shop/files/005_d7fff6a7-609e-4512-b0cf-d9611e7e5e02.jpg?v=1703583352",
+      "category": "Hoodies",
+      "size": "S",
+      "type": "Women",
+      "description": "Warm and comfortable hoodie for everyday wear."
+    },
+    {
+      "id": 4,
+      "name": "Slim Fit Jeans",
+      "price": 39.99,
+      "image": "https://www.collectionabbigliamento.it/open2b/var/products/33/06/0-027484ca-1200-Jeans-slim-fit-dark-blue-stone-washed-m5-by-meyer.jpg",
+      "category": "Jeans",
+      "size": "32",
+      "type": "Men",
+      "description": "Trendy slim fit jeans made with durable denim."
+    },
+    {
+      "id": 5,
+      "name": "Basic White T-Shirt",
+      "price": 15.99,
+      "image": "https://alfaq.in/cdn/shop/files/0T4A9804Large.png?v=1723117712",
+      "category": "T-shirts",
+      "size": "M",
+      "type": "Men",
+      "description": "Classic white t-shirt made from soft cotton."
+    },
+    {
+      "id": 6,
+      "name": "Elegant Evening Dress",
+      "price": 59.99,
+      "image": "https://missteeq.co.za/wp-content/uploads/2018/02/72922-1-718x1030.jpg",
+      "category": "Dresses",
+      "size": "S",
+      "type": "Women",
+      "description": "Perfect for formal events or evening occasions."
+    },
+    {
+      "id": 7,
+      "name": "Leather Biker Jacket",
+      "price": 89.99,
+      "image": "https://pandomoto.com/wp-content/uploads/2023/03/Twin-Leather-Jacket-Black-1-2-1-383x576.jpg",
+      "category": "Jackets",
+      "size": "M",
+      "type": "Men",
+      "description": "Genuine leather jacket with biker style details."
+    },
+    {
+      "id": 8,
+      "name": "Pullover Hoodie",
+      "price": 33.59,
+      "image": "https://cdnp.sanmar.com/medias/sys_master/images/images/h5a/h71/12897998012446/4180-Maroon-7-PC78HMaroonModelLifestyleGA22-1200W.jpg",
+      "category": "Hoodies",
+      "size": "L",
+      "type": "Men",
+      "description": "Casual hoodie with front pocket and soft fabric."
+    },
+    {
+      "id": 9,
+      "name": "Straight Fit Jeans",
+      "price": 42.99,
+      "image": "https://spykar.com/cdn/shop/files/1_d8c08f8f-0ba4-4d35-a6af-de6726969935.jpg?v=1740741581",
+      "category": "Jeans",
+      "size": "34",
+      "type": "Men",
+      "description": "Classic straight fit jeans for everyday wear."
+    },
+    {
+      "id": 10,
+      "name": "Graphic Tee",
+      "price": 18.99,
+      "image": "https://img1.theiconic.com.au/tHfzyjOxjY1gARgR0q3u7s8Y-Uw=/fit-in/1000x0/filters:fill(ffffff):quality(85)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fpetal-pup-6009-9610352-1.jpg",
+      "category": "T-shirts",
+      "size": "M",
+      "type": "Women",
+      "description": "Trendy graphic t-shirt with printed design."
+    },
+    {
+      "id": 11,
+      "name": "Winter Coat",
+      "price": 119.99,
+      "image": "https://img01.ztat.net/article/spp-media-p1/7c8f6a4a43494b8fbc23d9304e6de591/52858ba9b88d4d3888708d594dba8f13.jpg?imwidth=300",
+      "category": "Coats",
+      "size": "L",
+      "type": "Women",
+      "description": "Warm winter coat ideal for cold climates."
+    },
+    {
+      "id": 12,
+      "name": "Formal Shirt",
+      "price": 25.99,
+      "image": "https://www.brioni.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fw2dr5qwt1rrm%2F3QxHZ2ekeReea5sZhz4ifL%2F2a48d0e7410ca67ed70380274d4959fc%2FOriginal_ecom-RCL8IQPZ0241000R.jpg&w=3840&q=75",
+      "category": "Shirts",
+      "size": "M",
+      "type": "Men",
+      "description": "Classic formal shirt suitable for office wear."
+    },
+    {
+      "id": 13,
+      "name": "Summer Shorts",
+      "price": 20.99,
+      "image": "https://fumba.store/cdn/shop/files/71HkCXZ1srL_grande.jpg?v=1725289419",
+      "category": "Shorts",
+      "size": "M",
+      "type": "Men",
+      "description": "Comfortable summer shorts made with breathable fabric."
+    },
+    {
+      "id": 14,
+      "name": "Wool Sweater",
+      "price": 40.99,
+      "image": "https://n.nordstrommedia.com/it/0a6b2866-d78b-4c45-8770-c7547955bf89.jpeg?h=368&w=240&dpr=2",
+      "category": "Sweaters",
+      "size": "L",
+      "type": "Women",
+      "description": "Warm wool sweater for winter and layering."
+    },
+    {
+      "id": 15,
+      "name": "Pleated Skirt",
+      "price": 35.99,
+      "image": "https://ae01.alicdn.com/kf/Sa3965111f53b423abd595dcd4b7324bbG.jpg",
+      "category": "Skirts",
+      "size": "S",
+      "type": "Women",
+      "description": "Elegant pleated skirt for casual and office wear."
+    },
+    {
+      "id": 16,
+      "name": "Running Shoes",
+      "price": 55.99,
+      "image": "https://i5.walmartimages.com/seo/Comfortable-Shoes-For-Women-Platform-Clearance-Lightweight-Soft-Sneakers-Casual-Supportive-Neutral-Running-Shoes-Size-7-5-Green_9dc732d2-9bfc-4bd2-a796-6296f680a944.21e12511bf37b3775b2eee289ea91645.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+      "category": "Shoes",
+      "size": "42",
+      "type": "Men",
+      "description": "Lightweight running shoes for comfort and performance."
+    },
+    {
+      "id": 17,
+      "name": "Chino Pants",
+      "price": 38.99,
+      "image": "https://americantall.com/cdn/shop/products/American-Tall-Men-Traveler-Chino-Pants-LightGrey-front.jpg?v=1650653670",
+      "category": "Pants",
+      "size": "32",
+      "type": "Men",
+      "description": "Smart casual chino pants suitable for office and outings."
+    },
+    {
+      "id": 18,
+      "name": "Leather Belt",
+      "price": 20.99,
+      "image": "https://shop.mango.com/assets/rcs/pics/static/T1/fotos/S/17071239_99.jpg?imwidth=2048&imdensity=1&ts=1747406073526",
+      "category": "Accessories",
+      "size": "M",
+      "type": "Men",
+      "description": "High-quality leather belt with classic buckle."
+    },
+    {
+      "id": 19,
+      "name": "Floral Maxi Dress",
+      "price": 45.99,
+      "image": "https://m.media-amazon.com/images/I/71O6toPxUKL._UY1000_.jpg",
+      "category": "Dresses",
+      "size": "L",
+      "type": "Women",
+      "description": "Bright floral maxi dress for summer and casual parties."
+    },
+    {
+      "id": 20,
+      "name": "Bomber Jacket",
+      "price": 64.99,
+      "image": "https://m.media-amazon.com/images/I/61oMYhxlugL._AC_UY1000_.jpg",
+      "category": "Jackets",
+      "size": "M",
+      "type": "Men",
+      "description": "Modern bomber jacket made with soft polyester."
+    },
+    {
+      "id": 21,
+      "name": "Zip-up Hoodie",
+      "price": 36.99,
+      "image": "https://m.media-amazon.com/images/I/61sTQtcXK3L._UY1000_.jpg",
+      "category": "Hoodies",
+      "size": "S",
+      "type": "Women",
+      "description": "Comfortable zip-up hoodie with adjustable hood."
+    },
+    {
+      "id": 22,
+      "name": "Skinny Jeans",
+      "price": 40.99,
+      "image": "https://calvinklein-eu.scene7.com/is/image/CalvinKleinEU/J20J225121_1A4_main?$b2c_updp_m_mainImage_1920$",
+      "category": "Jeans",
+      "size": "30",
+      "type": "Women",
+      "description": "Trendy skinny jeans with stretch for comfort."
+    },
+    {
+      "id": 23,
+      "name": "V-Neck T-Shirt",
+      "price": 16.99,
+      "image": "https://cdn.shoplightspeed.com/shops/620892/files/9059117/768x1024x3/mens-stretch-v-neck-tee-s-s-style-30-48001.jpg",
+      "category": "T-shirts",
+      "size": "L",
+      "type": "Men",
+      "description": "Soft cotton v-neck t-shirt for casual wear."
+    },
+    {
+      "id": 24,
+      "name": "Trench Coat",
+      "price": 109.99,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51lAh1s5a2L._SS400_.jpg",
+      "category": "Coats",
+      "size": "M",
+      "type": "Women",
+      "description": "Classic trench coat perfect for rainy days."
+    },
+    {
+      "id": 25,
+      "name": "Oxford Shirt",
+      "price": 27.99,
+      "image": "https://www.careofcarl.com/bilder/artiklar/zoom/25279211r_3.jpg?m=1686838007",
+      "category": "Shirts",
+      "size": "L",
+      "type": "Men",
+      "description": "Smart oxford shirt ideal for office and formal events."
+    },
+    {
+      "id": 26,
+      "name": "Denim Shorts",
+      "price": 21.99,
+      "image": "https://dfcdn.defacto.com.tr/6/B5037A8_25SM_NM39_03_03.jpg",
+      "category": "Shorts",
+      "size": "M",
+      "type": "Women",
+      "description": "Casual denim shorts perfect for summer outings."
+    },
+    {
+      "id": 27,
+      "name": "Cable Knit Sweater",
+      "price": 41.99,
+      "image": "https://m.media-amazon.com/images/I/71QU9W9obtL.jpg",
+      "category": "Sweaters",
+      "size": "L",
+      "type": "Women",
+      "description": "Warm cable knit sweater for cozy winter days."
+    },
+    {
+      "id": 28,
+      "name": "A-Line Skirt",
+      "price": 32.99,
+      "image": "https://saltattire.com/cdn/shop/files/Generous--Black-A--Line-Skirt--Black.jpg?v=1751011279&width=1500",
+      "category": "Skirts",
+      "size": "M",
+      "type": "Women",
+      "description": "A-line skirt suitable for office and casual wear."
+    },
+    {
+      "id": 29,
+      "name": "Sneakers",
+      "price": 59.99,
+      "image": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/e5d19a1b0c74c4adf52031592c14e0c7.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
+      "category": "Shoes",
+      "size": "41",
+      "type": "Men",
+      "description": "Stylish sneakers for casual and sports use."
+    },
+    {
+      "id": 30,
+      "name": "Cargo Pants",
+      "price": 39.99,
+      "image": "https://apollomoda.com/cdn/shop/files/Screenshot_2024-12-12_at_8.56.16_PM.png?v=1750336793",
+      "category": "Pants",
+      "size": "34",
+      "type": "Men",
+      "description": "Comfortable cargo pants with multiple pockets."
+    },
+    {
+      "id": 31,
+      "name": "Cocktail Dress",
+      "price": 54.99,
+      "image": "https://i.ebayimg.com/images/g/2QYAAOSw20pkGgVq/s-l1200.jpg",
+      "category": "Dresses",
+      "size": "S",
+      "type": "Women",
+      "description": "Elegant cocktail dress for parties and evening events."
+    },
+    {
+      "id": 32,
+      "name": "Hooded Jacket",
+      "price": 69.99,
+      "image": "https://assets.thenorthface.com/images/t_img/f_auto,h_400,w_344,e_unsharp_mask:150/dpr_2.0/v1723171660/NF0A84I14GV-HERO/Mens-Aconcagua-3-Hoodie.png?$PLP-IMAGE$",
+      "category": "Jackets",
+      "size": "L",
+      "type": "Men",
+      "description": "Hooded jacket for outdoor and casual wear."
+    },
+    {
+      "id": 33,
+      "name": "Fleece Hoodie",
+      "price": 37.99,
+      "image": "https://is4.revolveassets.com/images/p4/n/z/PLAU-MK15W_V1.jpg",
+      "category": "Hoodies",
+      "size": "M",
+      "type": "Women",
+      "description": "Soft fleece hoodie for cold days."
+    },
+    {
+      "id": 34,
+      "name": "Relaxed Fit Jeans",
+      "price": 43.99,
+      "image": "https://n.nordstrommedia.com/it/bbab0eda-17fe-492c-ae51-16f3964abb29.jpeg?h=368&w=240&dpr=2",
+      "category": "Jeans",
+      "size": "32",
+      "type": "Men",
+      "description": "Comfortable relaxed fit jeans for everyday use."
+    },
+    {
+      "id": 35,
+      "name": "Striped T-Shirt",
+      "price": 16.59,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20240904/AUzx/66d78e811d763220fabdb656/-473Wx593H-700364140-navy-MODEL.jpg",
+      "category": "T-shirts",
+      "size": "M",
+      "type": "Women",
+      "description": "Classic striped t-shirt for casual wear."
+    },
+    {
+      "id": 36,
+      "name": "Peacoat",
+      "price": 124.99,
+      "image": "https://www.luxurylane.com/cdn/shop/products/626-168842-blk_1.jpg?v=1633962015&width=1520",
+      "category": "Coats",
+      "size": "L",
+      "type": "Women",
+      "description": "Stylish peacoat perfect for winter and formal events."
+    },
+    {
+      "id": 37,
+      "name": "Button-Down Shirt",
+      "price": 26.99,
+      "image": "https://mugsyjeans.com/cdn/shop/files/Mugsy_AprilEcom_F.84.jpg?v=1747846034",
+      "category": "Shirts",
+      "size": "M",
+      "type": "Men",
+      "description": "Versatile button-down shirt for work or casual outings."
+    },
+    {
+      "id": 38,
+      "name": "Bermuda Shorts",
+      "price": 22.99,
+      "image": "https://m.media-amazon.com/images/I/71DvmWNFroL._UF894,1000_QL80_.jpg",
+      "category": "Shorts",
+      "size": "L",
+      "type": "Men",
+      "description": "Comfortable Bermuda shorts for summer activities."
+    },
+    {
+      "id": 39,
+      "name": "Turtleneck Sweater",
+      "price": 44.99,
+      "image": "https://m.media-amazon.com/images/I/61779lByF-L._AC_SL1500_.jpg",
+      "category": "Sweaters",
+      "size": "M",
+      "type": "Women",
+      "description": "Classic turtleneck sweater for layering and warmth."
+    },
+    {
+      "id": 40,
+      "name": "Mini Skirt",
+      "price": 29.99,
+      "image": "https://m.media-amazon.com/images/I/81KKovZ36IL._UY1100_.jpg",
+      "category": "Skirts",
+      "size": "S",
+      "type": "Women",
+      "description": "Trendy mini skirt for casual and night out looks."
+    },
+    {
+      "id": 41,
+      "name": "Evening Gown",
+      "price": 84.99,
+      "image": "https://www.shobo.in/cdn/shop/products/8a0cc9f3de110e5b7298225479256340_1200x1200.jpg?v=1618399962",
+      "category": "Dresses",
+      "size": "L",
+      "type": "Women",
+      "description": "Elegant evening gown suitable for formal events."
+    },
+    {
+      "id": 42,
+      "name": "Windbreaker Jacket",
+      "price": 59.99,
+      "image": "https://danishendurance.com/cdn/shop/files/preview_images/c5ac3a96c53c4c859fa614aaaf563508.thumbnail.0000000000.jpg?v=1699029011&width=1080",
+      "category": "Jackets",
+      "size": "M",
+      "type": "Men",
+      "description": "Lightweight windbreaker for outdoor sports."
+    },
+    {
+      "id": 43,
+      "name": "Pullover Hoodie Large",
+      "price": 39.99,
+      "image": "https://static.platform.michaels.com/2c-prd/en_US/489737765472304.png",
+      "category": "Hoodies",
+      "size": "L",
+      "type": "Men",
+      "description": "Oversized hoodie for comfort and style."
+    },
+    {
+      "id": 44,
+      "name": "Bootcut Jeans",
+      "price": 44.99,
+      "image": "https://m.media-amazon.com/images/I/818Xc23Y-iL._UY1100_.jpg",
+      "category": "Jeans",
+      "size": "34",
+      "type": "Women",
+      "description": "Bootcut jeans with a relaxed fit for casual wear."
+    },
+    {
+      "id": 45,
+      "name": "Henley T-Shirt",
+      "price": 18.99,
+      "image": "https://www.lazychunks.com/cdn/shop/products/21f9531c-4f1a-40e3-938d-57fe644a72ab1549454969852-ETHER-Grey-Melange-Henley-T-shirt-2501549454968902-1_1024x1024.jpg?v=1594039216",
+      "category": "T-shirts",
+      "size": "M",
+      "type": "Men",
+      "description": "Henley style t-shirt with button details."
+    },
+    {
+      "id": 46,
+      "name": "Long Coat",
+      "price": 129.99,
+      "image": "https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/APRIL/24/wXMfy3CH_37b331f0a8cf4a529dc22f9ab99140e0.jpg",
+      "category": "Coats",
+      "size": "L",
+      "type": "Women",
+      "description": "Long coat perfect for winter and formal occasions."
+    },
+    {
+      "id": 47,
+      "name": "Chambray Shirt",
+      "price": 29.99,
+      "image": "https://americantall.com/cdn/shop/files/American-Tall-Men-Chambray-Button-Down-Shirt-Dark-Chambray-front.jpg?v=1683573725",
+      "category": "Shirts",
+      "size": "L",
+      "type": "Men",
+      "description": "Casual chambray shirt for everyday wear."
+    },
+    {
+      "id": 48,
+      "name": "Athletic Shorts",
+      "price": 20.99,
+      "image": "https://n.nordstrommedia.com/it/9e6a6516-217f-4fc9-8ec9-b575ce7d73fe.jpeg?h=368&w=240&dpr=2",
+      "category": "Shorts",
+      "size": "M",
+      "type": "Women",
+      "description": "Lightweight shorts ideal for sports activities."
+    },
+    {
+      "id": 49,
+      "name": "Crew Neck Sweater",
+      "price": 42.99,
+      "image": "https://www.pauljamesknitwear.com/cdn/shop/products/3139-AUDREY-MODEL-WOMEN-CASHMERE-CREW-NECK-DROP-SHOULDER-04.jpg?v=1706207658",
+      "category": "Sweaters",
+      "size": "L",
+      "type": "Women",
+      "description": "Classic crew neck sweater for layering."
+    },
+    {
+      "id": 50,
+      "name": "Midi Skirt",
+      "price": 35.99,
+      "image": "https://i.etsystatic.com/5609612/r/il/d404ac/3850953891/il_570xN.3850953891_n2jd.jpg",
+      "category": "Skirts",
+      "size": "M",
+      "type": "Women",
+      "description": "Flowy midi skirt for casual and office wear."
+    },
+    {
+      "id": 51,
+      "name": "Maxi Dress",
+      "price": 49.99,
+      "image": "https://luckyfash.com/cdn/shop/products/womens-dresses-vintage-ethnic-pattern-v-neck-loose-maxi-dress-instastyled-online-fashion-free-shipping-clothing-dresses-tops-shoes-maxi-dresses-instastyled-onli-163212-topaz-enhance.jpg?v=1686495161&width=1946",
+      "category": "Dresses",
+      "size": "M",
+      "type": "Women",
+      "description": "Comfortable maxi dress for summer and casual outings."
+    },
+    {
+      "id": 52,
+      "name": "Casual Blazer",
+      "price": 74.99,
+      "image": "https://i5.walmartimages.com/seo/YanHoo-Blazer-Men-Slim-Fit-Spring-Autumn-Mens-Plaid-Casual-Blazers-for-Business-Formal-Office-Jacket_ff5baf01-ee9c-4a00-9ced-0d144085d44b.84ca0f490328c5ac80de3fba9e959541.jpeg",
+      "category": "Jackets",
+      "size": "M",
+      "type": "Men",
+      "description": "Casual blazer perfect for office and social events."
+    },
+    {
+      "id": 53,
+      "name": "Sport Hoodie",
+      "price": 38.99,
+      "image": "https://www.sportsdirect.com/images/imgzoom/66/66861103_xxl_a1.jpg",
+      "category": "Hoodies",
+      "size": "L",
+      "type": "Women",
+      "description": "Hoodie ideal for sports and outdoor activities."
+    },
+    {
+      "id": 54,
+      "name": "Denim Jeans",
+      "price": 42.99,
+      "image": "https://static-01.daraz.com.bd/p/b1b9cb7806106215b37e708ad47b11f9.jpg",
+      "category": "Jeans",
+      "size": "32",
+      "type": "Men",
+      "description": "Classic denim jeans for everyday wear."
+    },
+    {
+      "id": 55,
+      "name": "Graphic T-Shirt",
+      "price": 19.99,
+      "image": "https://www.teez.in/cdn/shop/products/MUSIC-IS-WHAT-FEELING-2_669f5d12-e7da-4696-98bd-e65c57b6d7bf_large.jpg?v=1571502345",
+      "category": "T-shirts",
+      "size": "M",
+      "type": "Women",
+      "description": "T-shirt with modern graphic print."
+    },
+    {
+      "id": 56,
+      "name": "Raincoat",
+      "price": 94.99,
+      "image": "https://nordic-rainwear.com/1277-large_default/hrd-michigan-10000-classic-long-raincoat-womens-breathable.webp",
+      "category": "Coats",
+      "size": "L",
+      "type": "Women",
+      "description": "Waterproof raincoat for rainy seasons."
+    },
+    {
+      "id": 57,
+      "name": "Casual Shirt",
+      "price": 25.99,
+      "image": "https://i5.walmartimages.com/asr/8d8e47b4-c2cd-40bc-9026-ac9337ab9439.652930ce9c22cfd9b06e20c3afe032bf.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+      "category": "Shirts",
+      "size": "M",
+      "type": "Men",
+      "description": "Lightweight casual shirt for everyday wear."
+    },
+    {
+      "id": 58,
+      "name": "Sport Shorts",
+      "price": 21.99,
+      "image": "https://shopcgx.com/cdn/shop/files/80296-806-1.png?v=1726168358",
+      "category": "Shorts",
+      "size": "M",
+      "type": "Men",
+      "description": "Shorts designed for sports and workouts."
+    },
+    {
+      "id": 59,
+      "name": "Knitted Sweater",
+      "price": 43.99,
+      "image": "https://shoptommy.scene7.com/is/image/ShopTommy/76J4220_XIH_FNT",
+      "category": "Sweaters",
+      "size": "L",
+      "type": "Women",
+      "description": "Knitted sweater for cold weather comfort."
+    },
+    {
+      "id": 60,
+      "name": "Wrap Skirt",
+      "price": 33.99,
+      "image": "https://www.pinkblushmaternity.com/cdn/shop/files/98308-1_909e3c10-fc73-4d4a-859e-05759d971ee8.jpg?v=1737707178",
+      "category": "Skirts",
+      "size": "M",
+      "type": "Women",
+      "description": "Fashionable wrap skirt for casual and semi-formal occasions."
+    },
+    {
+      "id": 61,
+      "name": "Sleeve Knitted Sweater",
+      "price": 23.19,
+      "image": "https://i5.walmartimages.com/seo/Vivianyo-HD-Mens-Sweaters-for-the-Winter-Men-s-Fashion-Winter-High-Neck-Warm-Outdoor-Long-Sleeve-Knitted-Sweater-Top-Flash-Picks-Gray_3b340df4-399f-4201-9314-13b36a9a545f.addf25771828d6f8948f6e7f611a0950.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "category": "Sweaters",
+      "size": "L",
+      "type": "Men",
+      "description": "High-quality sweaters designed for men."
+    },
+    {
+      "id": 62,
+      "name": "Nylon Logo Hat",
+      "price": 44.14,
+      "image": "https://img.guess.com/image/upload/f_auto,q_auto:best,dpr_2,b_auto,c_pad,w_600/v1/NA/Style/ECOMM/M4BZ23WGJP2-JBLK.jpg",
+      "category": "Accessories",
+      "size": "M",
+      "type": "Men",
+      "description": "High-quality accessories designed for men."
+    },
+    {
+      "id": 63,
+      "name": "Lace-up Leather Shoes",
+      "price": 87.54,
+      "image": "https://images-cdn.ubuy.co.in/637ec3b56af2800ead4fe525-christmas-men-lace-business-leather.jpg",
+      "category": "Shoes",
+      "size": "41",
+      "type": "Men",
+      "description": "Men's Lace-up Leather Shoes - Casual, Comfortable, Black"
+    },
+    {
+      "id": 64,
+      "name": "Girls Sweaters Crewneck Pullover Jumper",
+      "price": 22.99,
+      "image": "https://m.media-amazon.com/images/I/61yIHwmAZ+L._AC_SX679_.jpg",
+      "category": "Sweaters",
+      "size": "8-9 YRS",
+      "type": "Girls",
+      "description": "High-quality sweaters designed for girls."
+    },
+    {
+      "id": 65,
+      "name": "Breathable Casual Summer",
+      "price": 28.42,
+      "image": "https://img4.dhresource.com/webp/m/0x0/f3/albu/jc/o/03/418080da-8c9a-47a3-930f-e22830c7219a.jpg",
+      "category": "Shoes",
+      "size": "42",
+      "type": "Men",
+      "description": "Crafted with breathable and lightweight fabric, our casual soft sole shoes ensure all-day comfort and freshness, perfect for your active"
+    },
+    {
+      "id": 66,
+      "name": "Girls Navy Denim Pleated Mini Skirt",
+      "price": 63.81,
+      "image": "https://sassafras.in/cdn/shop/products/NVSKRT30102-1_1000x.jpg?v=1757069159",
+      "category": "Skirts",
+      "size": "8-9 YRS",
+      "type": "Girls",
+      "description": "Navy Denim Pleated Mini Skirt, in Denim fabric, Unlined, Above Knee, Comfort Fit, Button Closure, Pleated Hemline and features Pleated Hemline"
+    },
+    {
+      "id": 67,
+      "name": "Jacket Coats Spring Regular Slim",
+      "price": 47.07,
+      "image": "https://img.drz.lazcdn.com/static/bd/p/0e6fbbf49f6506e63eebca4960c0e2b8.jpg_960x960q80.jpg_.webp",
+      "category": "Jackets",
+      "size": "M",
+      "type": "Men",
+      "description": "High-quality jackets designed for men."
+    },
+    {
+      "id": 68,
+      "name": "Baggy High Waist Wide Leg Denim Jeans",
+      "price": 126.11,
+      "image": "https://m.media-amazon.com/images/I/61S-fQH5AWL._SX679_.jpg",
+      "category": "Jeans",
+      "size": "L",
+      "type": "Women",
+      "description": "High-quality jeans designed for women."
+    },
+    {
+      "id": 69,
+      "name": "Girls Summer Dress Ruffle Sleeve",
+      "price": 125.71,
+      "image": "https://m.media-amazon.com/images/I/71Ilm4-PbqL._AC_SX679_.jpg",
+      "category": "Dresses",
+      "size": "8-9 YRS",
+      "type": "Girls",
+      "description": "High-quality dresses designed for boys."
+    },
+    {
+      "id": 70,
+      "name": "Colette Brown Leather Jacket",
+      "price": 71.6,
+      "image": "https://www.thejacketmaker.jp/cdn/shop/files/Womens_Colette_Brown_Leather_Jacket_Made_of_100_Real_Sheepskin_Leather_and_Classic_Style_6e6bbd8a-dbf6-49ed-9803-7b360db5fbf7_1080x.jpg?v=1756910946",
+      "category": "Jackets",
+      "size": "XL",
+      "type": "Women",
+      "description": "High-quality jackets designed for women."
+    },
+    {
+      "id": 71,
+      "name": "Women's Plain Round Neck T-shirt Royal Blue",
+      "price": 12.44,
+      "image": "https://wolfattire.com/cdn/shop/products/women-s-plain-round-neck-t-shirt-royal-blue-women-t-shirt-wolfattire-25135790092_1000x.jpg?v=1561036248",
+      "category": "T-shirts",
+      "size": "S",
+      "type": "Women",
+      "description": "High-quality t-shirts designed for women."
+    },
+    {
+      "id": 72,
+      "name": "Girl Hair clips",
+      "price": 8.32,
+      "image": "https://i.etsystatic.com/27428124/r/il/714de5/4886138618/il_1588xN.4886138618_oh0w.jpg",
+      "category": "Accessories",
+      "size": "M",
+      "type": "Girls",
+      "description": "High-quality accessories designed for girls."
+    },
+    {
+      "id": 73,
+      "name": "Women White Solid Long Sleeves Shirt",
+      "price": 99.31,
+      "image": "https://imagescdn.allensolly.com/img/app/product/9/921827-11579920.jpg?auto=format&w=390",
+      "category": "Shirts",
+      "size": "S",
+      "type": "Women",
+      "description": "High-quality shirts designed for women."
+    },
+    {
+      "id": 74,
+      "name": "Girls Sweaters Kids Fashion Hollow Out Knit Pullover",
+      "price": 12.29,
+      "image": "https://m.media-amazon.com/images/I/71kakgt95oL._SY879_.jpg",
+      "category": "Sweaters",
+      "size": "5-14 YRS",
+      "type": "Girls",
+      "description": "High-quality sweaters designed for girls."
+    },
+    {
+      "id": 75,
+      "name": "Women Solid Pleated White Skirt",
+      "price": 41.55,
+      "image": "https://rukminim2.flixcart.com/image/750/900/xif0q/shopsy-skirt/a/g/v/28-2-skirt-white-pleated-easy-online-hub-women-original-imageahgryfhgkbx.jpeg?q=90&crop=false",
+      "category": "Skirts",
+      "size": "24",
+      "type": "Women",
+      "description": "High-quality skirts designed for women."
+    },
+    {
+      "id": 76,
+      "name": "Green Polyester + Spandex Women Party Evening Dress",
+      "price": 51.34,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2022/1/RZ/EY/OS/61427255/womens-evening-party-dress.jpg",
+      "category": "Dresses",
+      "size": "M",
+      "type": "Women",
+      "description": "High-quality dresses designed for men."
+    },
+    {
+      "id": 77,
+      "name": "Slim Fit Jeans",
+      "price": 102.15,
+      "image": "https://cdn.shopify.com/s/files/1/0555/4451/2817/files/RDG0001_1_1_480x480.jpg?v=1723447479",
+      "category": "Jeans",
+      "size": "M",
+      "type": "Men",
+      "description": "High-quality jeans designed for men."
+    },
+    {
+      "id": 78,
+      "name": "Lola Skinny Belt",
+      "price": 30.06,
+      "image": "https://img.guess.com/image/upload/f_auto,q_auto:eco,fl_strip_profile,dpr_1.5,fl_advanced_resize,fl_progressive,w_392,c_scale/v1/NA/Style/ECOMM/BW9280P5420-BOR-ALT2",
+      "category": "Accessories",
+      "size": "M",
+      "type": "Women",
+      "description": "High-quality accessories designed for women."
+    },
+    {
+      "id": 79,
+      "name": "Dark Grey Regular Fit Solid Cargo Chino Pant with 6 Pockets",
+      "price": 115.11,
+      "image": "https://www.urbanofashion.com/cdn/shop/files/chicargo-09-dgrey.jpg?v=1738592796",
+      "category": "Pants",
+      "size": "28",
+      "type": "Men",
+      "description": "High-quality pants designed for men."
+    },
+    {
+      "id": 80,
+      "name": "Hype Girls Multi Dark Pastel Drips T-Shirt",
+      "price": 15.41,
+      "image": "https://uk.justhype.com/cdn/shop/files/RTLR-124.jpg?v=1706464509&width=1100",
+      "category": "T-shirts",
+      "size": "5-6 YRS",
+      "type": "Girls",
+      "description": "High-quality t-shirts designed for girls."
+    },
+    {
+      "id": 81,
+      "name": "Hype Boys Grey Script Hoodie",
+      "price": 20.39,
+      "image": "https://uk.justhype.com/cdn/shop/files/hype-boys-grey-script-hoodie_1.jpg?v=1730265816&width=1100",
+      "category": "Hoodies",
+      "size": "5-6 YRS",
+      "type": "Boys",
+      "description": "High-quality hoodies designed for boys."
+    },
+    {
+      "id": 82,
+      "name": "Satin High Waist Skirts",
+      "price": 19.98,
+      "image": "https://m.media-amazon.com/images/I/61UDRGPm4dL._AC_SY741_.jpg",
+      "category": "Skirts",
+      "size": "L",
+      "type": "Women",
+      "description": "High-quality skirts designed for women."
+    },
+    {
+      "id": 83,
+      "name": "Pearly bride (white floes)",
+      "price": 127.22,
+      "image": "https://assets0.mirraw.com/images/10311135/MTB-20_1_zoom.jpg?1709152312",
+      "category": "Shoes",
+      "size": "30",
+      "type": "Women",
+      "description": "High-quality shoes designed for women."
+    },
+    {
+      "id": 84,
+      "name": "Love In Your Eyes Black Knotted Mermaid Maxi Dress",
+      "price": 109.81,
+      "image": "https://www.lulus.com/images/product/xlarge/11678881_1045042.jpg?w=560&hdpi=1",
+      "category": "Dresses",
+      "size": "XL",
+      "type": "Women",
+      "description": "High-quality dresses designed for men."
+    },
+    {
+      "id": 85,
+      "name": "NOBERO Men Oversized Hoodies Graphic Printed Cotton Fleece Long Sleeve Hooded Sweatshirts for Men",
+      "price": 11.28,
+      "image": "https://m.media-amazon.com/images/I/51bS+M+o1uL._SX679_.jpg",
+      "category": "Hoodies",
+      "size": "S",
+      "type": "Men",
+      "description": "High-quality hoodies designed for men."
+    },
+    {
+      "id": 86,
+      "name": "Boys Zip White Black Contrast T-shirt",
+      "price": 75.74,
+      "image": "https://triprindia.com/cdn/shop/files/twtblhnboy-dp1-bd145_1_290e81d1-0fc6-4253-ad97-15a3c44aaaed.jpg?v=1731999944&width=600",
+      "category": "T-shirts",
+      "size": "10-11 YRS",
+      "type": "Boys",
+      "description": "High-quality t-shirts designed for boys."
+    },
+    {
+      "id": 87,
+      "name": "Straight-Leg Built-In Flex Jeans for Boys",
+      "price": 17.49,
+      "image": "https://oldnavy.gap.com/webcontent/0052/707/130/cn52707130.jpg",
+      "category": "Jeans",
+      "size": "18",
+      "type": "Boys",
+      "description": "High-quality jeans designed for boys."
+    },
+    {
+      "id": 88,
+      "name": "Meow Meow Cats White T-Shirt for Girls",
+      "price": 20.67,
+      "image": "https://thedreamcatcherboutique.com/cdn/shop/files/Meow_Meow_Cats_White_T-Shirt_for_Girls_Cute_Cat_Print_Round_Neck_Half_Sleeve_Cotton_Tee_for_Kids.jpg?v=1730394914&width=990",
+      "category": "T-shirts",
+      "size": "22",
+      "type": "Girls",
+      "description": "High-quality t-shirts designed for girls."
+    },
+    {
+      "id": 89,
+      "name": "Long Sleeve V-Neck Sweater",
+      "price": 16.48,
+      "image": "https://m.media-amazon.com/images/I/61ebIWUkR3L._AC_SX679_.jpg",
+      "category": "Sweaters",
+      "size": "L",
+      "type": "Boys",
+      "description": "High-quality sweaters designed for boys."
+    },
+    {
+      "id": 90,
+      "name": "Thug Life Blue Trendy Boys Jeans",
+      "price": 15.72,
+      "image": "https://5.imimg.com/data5/MI/JO/MY-33510293/trendy-boys-jeans-1000x1000.jpg",
+      "category": "Jeans",
+      "size": "M",
+      "type": "Boys",
+      "description": "High-quality jeans designed for boys."
+    },
+    {
+      "id": 91,
+      "name": "Premium Navy Blue Tipped Bomber Jacket",
+      "price": 41.99,
+      "image": "http://urbanroad.pk/cdn/shop/products/Navy_Blue_Tipped_Bomber_Jacket_-_Boys_1200x1200.jpg",
+      "category": "Jackets",
+      "size": "M",
+      "type": "Boys",
+      "description": "High-quality jackets designed for boys."
+    },
+    {
+      "id": 92,
+      "name": "Cambridge Coat - Navy Chevron",
+      "price": 31.19,
+      "image": "https://euro.saintandsofia.com/cdn/shop/files/cambridge-coat-navy-chevron-women-s-coats-saint-sofia-eu-1125080168.jpg?v=1738901772&width={width}",
+      "category": "Coats",
+      "size": "XL",
+      "type": "Women",
+      "description": "High-quality coats designed for women."
+    },
+    {
+      "id": 93,
+      "name": "Aurora Ladies Leather Jacket",
+      "price": 257.69,
+      "image": "https://classyleatherbags.com/cdn/shop/products/1_1adce86e-dd79-475f-bd1b-e18d1db867f0_1400x1400.jpg?v=1683209671",
+      "category": "Jackets",
+      "size": "L",
+      "type": "Women",
+      "description": "High-quality jackets designed for women."
+    },
+    {
+      "id": 94,
+      "name": "ONLSEDONA Coat",
+      "price": 21.86,
+      "image": "https://images.only.com/15321868/4610374/003/only-onlsedonalifesophiadbcoatccotw-grey.jpg?v=c925b932f1e77a58a97465ed0eb37380&format=webp&width=1280&quality=90&key=25-0-3&bg-color=%23f5f5f5",
+      "category": "Coats",
+      "size": "M",
+      "type": "Women",
+      "description": "High-quality coats designed for women."
+    },
+    {
+      "id": 95,
+      "name": "Everyday Relaxed Hoodie Men Dark Green",
+      "price": 50.45,
+      "image": "https://iciw.centracdn.net/client/dynamic/images/12878_a29730a1d9-13515-103-1-1350x0.jpg",
+      "category": "Hoodies",
+      "size": "L",
+      "type": "Men",
+      "description": "High-quality hoodies designed for men."
+    },
+    {
+      "id": 96,
+      "name": "50TH ANNIVERSARY EMBROIDERED HOODIE",
+      "price": 50.87,
+      "image": "https://static.zara.net/assets/public/0641/f9af/aa2f4284a71f/20560512a575/00085031800-p/00085031800-p.jpg?ts=1756826083271&w=1024",
+      "category": "Hoodies",
+      "size": "L",
+      "type": "Women",
+      "description": "High-quality hoodies designed for women."
+    },
+    {
+      "id": 97,
+      "name": "Boys Skinny Knit Denim Jean",
+      "price": 15.99,
+      "image": "https://i5.walmartimages.com/seo/U-S-Polo-Assn-Boys-Skinny-Knit-Denim-Jean-Sizes-4-18_696b0891-03e7-4a94-a954-33aa02359a2e.9dd66979550d78a50a15b3e7c2c4dcb0.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "category": "Jeans",
+      "size": "18",
+      "type": "Boys",
+      "description": "High-quality jeans designed for boys."
+    },
+    {
+      "id": 98,
+      "name": "Boys Blue Self Design Round Neck Full Sleeve Sweater",
+      "price": 12.48,
+      "image": "https://www.montecarlo.in/cdn/shop/products/523063057-1-30_1.jpg?v=1697899968&width=1000",
+      "category": "Sweaters",
+      "size": "10-11 YRS",
+      "type": "Boys",
+      "description": "High-quality sweaters designed for boys."
+    },
+    {
+      "id": 99,
+      "name": "Printed Button-Front Cardigan Sweater for Girls Old Navy",
+      "price": 53.93,
+      "image": "https://oldnavy.gapcanada.ca/webcontent/0055/745/883/cn55745883.jpg",
+      "category": "Sweaters",
+      "size": "M",
+      "type": "Girls",
+      "description": "High-quality sweaters designed for girls."
+    },
+    {
+      "id": 100,
+      "name": "LEIGE Summer Thin Mens Shorts Business Casual Dress Suit Shorts",
+      "price": 34.33,
+      "image": "https://m.media-amazon.com/images/I/71iTmOvBNrL.jpg",
+      "category": "Shorts",
+      "size": "29",
+      "type": "Men",
+      "description": "High-quality shorts designed for men."
+    },
+    {
+      "id": 101,
+      "name": "Black Diamond Classic Stretch Dress Pant",
+      "price": 69.99,
+      "image": "https://connor.imgix.net/Connor/PWA-Products/C16DB100C_BLK_1.png?bg=e6e6e6&fm=jpg&format=pjpg&h=425&q=75&rect=440%2C0%2C2120%2C3000&w=300&auto=format%2Ccompress&fit=cover&cs=tinysrgb&dpr=2&ch=Width%2CDPR",
+      "category": "Pants",
+      "size": "30",
+      "type": "Men",
+      "description": "High-quality pants designed for men."
+    },
+    {
+      "id": 102,
+      "name": "Dea Shoulder Bag",
+      "price": 125.99,
+      "image": "https://img.guess.com/image/upload/f_auto,q_auto:best,dpr_2,b_auto,c_pad,w_600/v1/NA/Style/ECOMM/BG799372-BLA.jpg",
+      "category": "Accessories",
+      "size": "M",
+      "type": "Women",
+      "description": "High-quality accessories designed for women."
+    },
+    {
+      "id": 103,
+      "name": "Boston Crossover Bag",
+      "price": 85.59,
+      "image": "https://img.guess.com/image/upload/f_auto,q_auto:best,dpr_2,b_auto,c_pad,w_600/v1/NA/Style/ECOMM/HMBOMGP5426-BLA.jpg",
+      "category": "Accessories",
+      "size": "M",
+      "type": "Women",
+      "description": "High-quality accessories designed for women."
+    },
+    {
+      "id": 104,
+      "name": "Twenty Eight Shoes",
+      "price": 97.22,
+      "image": "https://dynamic.zacdn.com/8LLN2aaCOs6E-knkrpjwvDWPi7U=/filters:quality(70):format(webp)/https://static-sg.zacdn.com/p/twenty-eight-shoes-1966-5827523-5.jpg",
+      "category": "Shoes",
+      "size": "40",
+      "type": "Women",
+      "description": "High-quality shoes designed for women."
+    }
+  ]
+}

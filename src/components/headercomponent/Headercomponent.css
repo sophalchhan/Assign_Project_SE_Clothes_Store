@@ -1,0 +1,54 @@
+/* Header.css */
+.navbar-nav .nav-link {
+  color: #212529;
+   margin-right: 20px; /* spacing between menu items */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+  transform: scale(1.05);
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+.cart-icon {
+  position: relative;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.2);
+  color: #0d6efd; /* bootstrap primary blue */
+}
+
+.cart-icon .badge {
+  font-size: 0.7rem;
+}
+/* Make navbar fixed on top */
+.navbar {
+  position: fixed;  /* fix navbar at top */
+  top: 0;           /* stick to top */
+  left: 0;
+  right: 0;
+  z-index: 1100;    /* stay above other content */
+  background-color: white; /* same background as page */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* optional shadow */
+}
+
+/* Optional: add padding-top to page content to avoid overlap */
+body, .container {
+  padding-top: 10px; /* adjust according to navbar height */
+}

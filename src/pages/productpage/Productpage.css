@@ -1,0 +1,81 @@
+.filter-btn {
+  border: 1px solid #f8f8f8;
+  color: #0d6efd;
+  background: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-btn:hover {
+  background: #0da9fd;
+  color: white;
+}
+
+.filter-btn.active {
+  background: #0d6efd;
+  color: white;
+  font-weight: bold;
+  border-bottom: 3px solid #0a58ca; /* underline effect */
+}
+/* Sticky Filter Bar */
+.filter-container {
+  position: sticky; /* sticks to top when scrolling */
+  top: 70px; /* adjust according to your navbar height */
+  z-index: 1000;
+  background-color: white;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0 0 rgba(0,0,0,0); /* no shadow initially */
+}
+
+/* Shadow appears smoothly when sticky */
+.filter-container.sticky {
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Make filter buttons scrollable on small screens */
+.filter-container .d-flex {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filter-container .filter-btn {
+  white-space: nowrap; /* prevent wrapping text */
+}
+
+/* Optional: hide scrollbar for clean look */
+.filter-container .d-flex::-webkit-scrollbar {
+  display: none;
+}
+.product-img {
+  width: 100%;
+  height: 450px;   /* fixed height for all */
+  object-fit: cover; /* crop nicely */
+}
+/* Ensure all category cards have equal height */
+.category-card {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card image to cover top portion */
+.category-card img {
+  object-fit: cover;
+  height: 450px;  /* adjust as needed */
+}
+
+/* Card body: center text vertically */
+.category-card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* take remaining space */
+}
+
+/* Optional: hover effect */
+.category-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
