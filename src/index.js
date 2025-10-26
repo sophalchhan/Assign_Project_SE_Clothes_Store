@@ -12,6 +12,9 @@ import Notfoundpage from './pages/404notfoundpage/Notfoundpage';
 import { CartProvider } from './pages/cartcontext/Cartcontext';
 import CartPage from './pages/cartpage/Cartpage';
 import Footercomponent from './components/footercomponent/Footercomponent';
+import AboutPage from './pages/AboutPage/AboutPage';
+import ContactPage from './pages/ContactPage/ContactPage';
+import ProductDetail from './pages/ProductDetailPage/ProductDetailPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,7 +24,10 @@ root.render(
         <Routes>
           <Route path='/' element={<Homepage/>}/>
           <Route path='/product' element={<Productpage/>}/>
+          <Route path='/productdetail' element={<ProductDetail/>}/>
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/about" element={<AboutPage/>} />
+          <Route path="/contact" element={<ContactPage/>} />
           <Route path="/footer" element={<Footercomponent/>} />
           <Route path='*' element={<Notfoundpage/>}/>
         </Routes>

@@ -1,0 +1,114 @@
+.about-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #3d5ef4 0%, #0769e9 100%);
+  color: white;
+}
+
+.about-hero h1 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.about-hero .lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.mission-vision .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-vision .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.features {
+  background-color: #fff;
+}
+
+.feature-icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.feature-icon:hover {
+  transform: scale(1.1);
+}
+
+.stats {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+}
+
+.stat-item h3 {
+  font-weight: 700;
+}
+
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.team-img {
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-img {
+  transform: scale(1.05);
+}
+
+.values .text-center {
+  padding: 2rem 1rem;
+}
+
+.values .text-center:hover {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .stats .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .team-img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .stats .display-4 {
+    font-size: 2rem;
+  }
+}

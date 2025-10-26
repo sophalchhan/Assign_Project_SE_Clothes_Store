@@ -53,7 +53,7 @@ const Homepage = () => {
         <div className="carousel-inner my-5">
           <div className="carousel-item active">
             <img
-              src="https://marketplace.canva.com/EAF0XmkzgQA/1/0/1600w/canva-gray-minimalist-new-collection-banner-O7EU5YM_MGU.jpg"
+              src="https://web.larue.com.kh/image/vcache/catalog/Women-Fashion-1920x550.webp"
               className="d-block w-100"
               alt="Fashion 1"
               style={{ height: "500px", objectFit: "cover" }}
@@ -61,7 +61,7 @@ const Homepage = () => {
           </div>
           <div className="carousel-item">
             <img
-              src="https://as1.ftcdn.net/jpg/03/81/07/74/1000_F_381077472_Zqttov9dRe2PwQcvYVBcPsUrrMY5EMRd.jpg"
+              src="https://www.soundesign.in/updated-benisoft-projects/kuipler/img/men-fashion-banner-2.png"
               className="d-block w-100"
               alt="Fashion 2"
               style={{ height: "500px", objectFit: "cover" }}
@@ -69,7 +69,7 @@ const Homepage = () => {
           </div>
           <div className="carousel-item">
             <img
-              src="https://marketplace.canva.com/EAFWecuevFk/1/0/1600w/canva-grey-brown-minimalist-summer-season-collections-banner-landscape-VXEmg9V800o.jpg"
+              src="https://www.cantonillinois.org/wp-content/uploads/purple-shop.jpg"
               className="d-block w-100"
               alt="Fashion 3"
               style={{ height: "500px", objectFit: "cover" }}
@@ -142,19 +142,6 @@ const Homepage = () => {
           </div>
         ))
       )}
-
-      {/* About Section */}
-      <div className="container-fluid bg-light p-5">
-        <div className="container">
-          <h2 className="text-center mb-4">About Us</h2>
-          <p className="text-center">
-            We bring you the best quality clothes and accessories at affordable
-            prices. Our mission is to make you look stylish and confident every
-            day.
-          </p>
-        </div>
-      </div>
-
       <Footercomponent />
     </>
   );

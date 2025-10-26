@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShoppingCart,
-  // faHouse,
+  faHouse,
   faStore,
   // faBookmark,
   faAddressBook,
@@ -11,6 +11,7 @@ import {
   faHeart,
   faBell,
   faCircleInfo,
+  faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import { useCart } from "../../pages/cartcontext/Cartcontext";
 import { Modal, Tab, Nav } from "react-bootstrap";
@@ -22,7 +23,16 @@ const AuthModal = ({ show, handleClose }) => {
 
   return (
     <Modal show={show} onHide={handleClose} centered>
-      <Modal.Body>
+      <Modal.Body className="position-relative">
+        {/* Close Button */}
+        <button
+          type="button"
+          className="btn-close position-absolute"
+          style={{ top: "10px", right: "15px" }}
+          onClick={handleClose}
+          aria-label="Close"
+        ></button>
+        
         <Tab.Container activeKey={activeKey} onSelect={(k) => setActiveKey(k)}>
           {/* Tabs */}
           <Nav
@@ -42,11 +52,11 @@ const AuthModal = ({ show, handleClose }) => {
             <Tab.Pane eventKey="login">
               <form>
                 <div className="mb-3">
-                  <label className="form-label">Mobile number</label>
+                  <label className="form-label">Gmail</label>
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Enter phone number"
+                    placeholder="Enter Gmail"
                     required
                   />
                 </div>
@@ -66,9 +76,9 @@ const AuthModal = ({ show, handleClose }) => {
 
               <p className="text-center mt-3">Forgot your password?</p>
 
-              <div className="text-center my-3">OR</div>
+              {/* <div className="text-center my-3">OR</div> */}
 
-              <button className="btn btn-outline-dark w-100 mb-2 d-flex align-items-center">
+              {/* <button className="btn btn-outline-dark w-100 mb-2 d-flex align-items-center">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
                   alt="Google"
@@ -77,9 +87,9 @@ const AuthModal = ({ show, handleClose }) => {
                   className="me-2"
                 />
                 <span className="flex-grow-1 text-center">Continue with Google</span>
-              </button>
+              </button> */}
 
-              <button className="btn btn-outline-dark w-100 d-flex align-items-center">
+              {/* <button className="btn btn-outline-dark w-100 d-flex align-items-center">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png"
                   alt="Facebook"
@@ -88,7 +98,7 @@ const AuthModal = ({ show, handleClose }) => {
                   className="me-2"
                 />
                 <span className="flex-grow-1 text-center">Continue with Facebook</span>
-              </button>
+              </button> */}
 
 
               <p className="text-center mt-3">
@@ -196,12 +206,12 @@ const Headercomponent = () => {
           {/* Navbar Menu */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto me-3">
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link text-dark" to="/">
                   <FontAwesomeIcon icon={faHouse} className="me-1" />
                   Home
                 </Link>
-              </li> */}
+              </li>
               <li className="nav-item">
                 <Link className="nav-link text-dark" to="/product">
                   <FontAwesomeIcon icon={faStore} className="me-1" />
@@ -209,13 +219,13 @@ const Headercomponent = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-dark" to="/footer">
+                <Link className="nav-link text-dark" to="/about">
                   <FontAwesomeIcon icon={faCircleInfo} className="me-1" />
                   About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-dark" to="/footer">
+                <Link className="nav-link text-dark" to="/contact">
                   <FontAwesomeIcon icon={faAddressBook} className="me-1" />
                   Contact
                 </Link>
