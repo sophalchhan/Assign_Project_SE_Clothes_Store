@@ -17,16 +17,16 @@ const AboutPage = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Khen kachara",
       role: "Founder & CEO",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+      image: "https://scontent.fpnh11-1.fna.fbcdn.net/v/t39.30808-6/471269848_903160245310204_3646223438861718800_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeG1sjEH0oleVpOPzwbzUZTia729VZpbGOhrvb1VmlsY6PXZQoKVPN_kSRSk9OfD5f4pskLhlWZ4HtFUT-SScbTg&_nc_ohc=eimdaeXYY2EQ7kNvwEe8gFk&_nc_oc=AdmvoY21qLIBWFVtEv8G5n3SAQV1SofzhgeDWAvY_UMkjdUYVzSQrJgl-kLdpy-jXU8&_nc_zt=23&_nc_ht=scontent.fpnh11-1.fna&_nc_gid=xUFgmfrnaNaZMost9SKQtQ&oh=00_AfjsRhM5L8lN2OSjf-7QUNSwZzJ0bNw69yJ_js0ujKqeYg&oe=691CB8EA",
       description: "Passionate about sustainable fashion and creating timeless pieces."
     },
     {
       id: 2,
-      name: "Michael Chen",
+      name: "Chhan sophal",
       role: "Head Designer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+      image: "https://scontent.fpnh11-1.fna.fbcdn.net/v/t39.30808-6/483066281_1847592922745925_2207549823140565757_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=100&ccb=1-7&_nc_sid=fe5ecc&_nc_eui2=AeH9hfnhIcheP7owuLDyTrCf8xk3GH82wQTzGTcYfzbBBC8Nt4Zo45wvsBi2XXwqwrkdkvBOw6SSH9BUyKf4xuRd&_nc_ohc=WiTEsUp8PcwQ7kNvwFHc84b&_nc_oc=AdniOXagMlbPDWrVkEb9jYfKv6FGjh0pCHIY9oLSbrTYe-dhhBRB569K6Obz8-PrtVM&_nc_zt=23&_nc_ht=scontent.fpnh11-1.fna&_nc_gid=RgJy6x4IUTgKSPHHk1IK8g&oh=00_AfgBM0J7w3LRXtry9DxulBQgxzQg9LPUUjeVSU19vW67oQ&oe=691CD9A8",
       description: "Bringing innovative designs and trends to life."
     },
     {

@@ -21,13 +21,13 @@ const Footercomponent = () => {
             </div>
 
             {/* Loyalty */}
-            <div className="col-md-2 mb-3 footer-item">
+            {/* <div className="col-md-2 mb-3 footer-item">
               <h6 className="fw-bold">LOYALTY</h6>
               <p>
                 <FontAwesomeIcon icon={faGift} className="me-2" />
                 Membership & Benefits
               </p>
-            </div>
+            </div> */}
 
             {/* Follow Us */}
             <div className="col-md-2 mb-3 footer-item">
@@ -47,13 +47,13 @@ const Footercomponent = () => {
             </div>
 
             {/* Location */}
-            <div className="col-md-2 mb-3 footer-item">
+            {/* <div className="col-md-2 mb-3 footer-item">
               <h6 className="fw-bold">LOCATION</h6>
               <p>
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="me-2" />
                 Find a store
               </p>
-            </div>
+            </div> */}
 
             {/* Contact Us */}
             <div className="col-md-2 mb-3 footer-item">

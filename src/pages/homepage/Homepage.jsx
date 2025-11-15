@@ -2,22 +2,30 @@ import { useEffect, useRef, useState } from "react";
 import * as bootstrap from "bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 import Headercomponent from "../../components/headercomponent/Headercomponent";
 import Footercomponent from "../../components/footercomponent/Footercomponent";
-import { useCart } from "../cartcontext/Cartcontext"; // ✅ Import Cart Context
+import { useCart } from "../cartcontext/Cartcontext";
 import "./Homepage.css";
 
 const Homepage = () => {
   const [clothes, setClothes] = useState([]);
   const carouselRef = useRef(null);
   const scrollRefs = useRef({});
-  const { addToCart } = useCart(); // ✅ Get addToCart function
+  const { addToCart } = useCart();
+  const navigate = useNavigate();
 
   useEffect(() => {
+    // Load data from json-server URL
     fetch("http://localhost:4000/clothes")
-      .then((res) => res.json())
-      .then((data) => setClothes(data));
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to load clothes data");
+        return res.json();
+      })
+      .then((data) => setClothes(data))
+      .catch((err) => console.error(err));
 
+    // Init Bootstrap carousel
     if (carouselRef.current) {
       new bootstrap.Carousel(carouselRef.current, {
         interval: 3000,
@@ -29,7 +37,7 @@ const Homepage = () => {
     }
   }, []);
 
-  // Group by category
+  // Group clothes by category
   const grouped = clothes.reduce((acc, item) => {
     if (!acc[item.category]) acc[item.category] = [];
     acc[item.category].push(item);
@@ -37,11 +45,20 @@ const Homepage = () => {
   }, {});
 
   const scrollLeft = (category) => {
-    scrollRefs.current[category].scrollBy({ left: -300, behavior: "smooth" });
+    scrollRefs.current[category]?.scrollBy({ left: -300, behavior: "smooth" });
   };
 
   const scrollRight = (category) => {
-    scrollRefs.current[category].scrollBy({ left: 300, behavior: "smooth" });
+    scrollRefs.current[category]?.scrollBy({ left: 300, behavior: "smooth" });
+  };
+
+  const handleProductClick = (product) => {
+    navigate(`/product/${product.id}`, { state: { product } });
+  };
+
+  const handleBuyClick = (e, product) => {
+    e.stopPropagation();
+    addToCart(product);
   };
 
   return (
@@ -78,7 +95,34 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* CATEGORY SECTIONS */}
+      {/* FEATURES IMAGE SECTION*/}
+      <section className="container text-center mt-5">
+        <h2 className="fw-bold mb-4 section-title">FEATURES</h2>
+        <div className="row g-4">
+          <div className="col-md-4">
+            <img
+              src="https://www.have-clothes-will-travel.com/wp-content/uploads/2019/05/qtq80-7bsDUb.jpeg"
+              className="img-fluid rounded shadow-sm feature-img"
+            />
+          </div>
+
+          <div className="col-md-4">
+            <img
+              src="https://img.freepik.com/free-photo/shirt-mockup-concept-with-plain-clothing_23-2149448751.jpg?semt=ais_incoming&w=740&q=80"
+              className="img-fluid rounded shadow-sm feature-img"
+            />
+          </div>
+
+          <div className="col-md-4">
+            <img
+              src="https://media.almostmakesperfect.com/wp-content/uploads/2021/02/16135359/lesgamines-e1613749471710.jpg"
+              className="img-fluid rounded shadow-sm feature-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Category Sections */}
       {Object.keys(grouped).length === 0 ? (
         <p className="text-center my-5">Loading products...</p>
       ) : (
@@ -86,7 +130,7 @@ const Homepage = () => {
           <div key={category} className="container position-relative my-5">
             <h2 className="mb-4 text-capitalize">{category}</h2>
 
-            {/* Scroll Buttons */}
+            {/* Left Scroll Btn */}
             <button
               className="btn btn-light position-absolute top-50 start-0 translate-middle-y shadow"
               onClick={() => scrollLeft(category)}
@@ -105,7 +149,8 @@ const Homepage = () => {
                 <div
                   key={item.id}
                   className="card shadow-sm category-card"
-                  style={{ minWidth: "250px" }}
+                  style={{ minWidth: "250px", cursor: "pointer" }}
+                  onClick={() => handleProductClick(item)}
                 >
                   <img
                     src={item.image}
@@ -114,14 +159,13 @@ const Homepage = () => {
                     style={{ height: "250px", objectFit: "cover" }}
                   />
                   <div className="card-footer bg-white">
-                    <h5 className="fw-bold element">{item.name}</h5>
+                    <h5 className="fw-bold">{item.name}</h5>
                     <h6 className="text-muted">US {item.price} $</h6>
                     <p>Size: {item.size}</p>
 
-                    {/* ✅ Buy Button adds to cart */}
                     <button
                       className="btn btn-primary mt-2 w-100"
-                      onClick={() => addToCart(item)}
+                      onClick={(e) => handleBuyClick(e, item)}
                     >
                       <FontAwesomeIcon icon={faShoppingCart} className="me-2" />
                       Buy
@@ -131,7 +175,7 @@ const Homepage = () => {
               ))}
             </div>
 
-            {/* Right Scroll */}
+            {/* Right Scroll Btn */}
             <button
               className="btn btn-light position-absolute top-50 end-0 translate-middle-y shadow"
               onClick={() => scrollRight(category)}
@@ -142,6 +186,7 @@ const Homepage = () => {
           </div>
         ))
       )}
+
       <Footercomponent />
     </>
   );
