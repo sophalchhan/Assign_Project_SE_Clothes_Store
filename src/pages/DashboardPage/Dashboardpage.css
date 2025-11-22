@@ -1,0 +1,178 @@
+/* ============================
+   CONTAINER LAYOUT
+============================= */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: #f5f6fa;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============================
+   SIDEBAR
+============================= */
+.sidebar {
+  width: 240px;
+  background: #111827;
+  color: white;
+  transition: width 0.3s ease;
+  padding: 20px 15px;
+  position: relative;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #facc15;
+}
+
+.toggle-btn {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Sidebar Menu */
+.menu {
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu li:hover {
+  background: #1f2937;
+  transform: translateX(3px);
+}
+
+.sidebar.collapsed .menu li {
+  justify-content: center;
+}
+
+/* ============================
+   MAIN CONTENT
+============================= */
+.main {
+  flex: 1;
+  padding: 20px 30px;
+  overflow-y: auto;
+}
+
+/* ============================
+   TOP BAR
+============================= */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f3f4f6;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icon:hover {
+  color: #2563eb;
+}
+
+.profile-img {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ============================
+   CONTENT AREA
+============================= */
+.page-title {
+  margin-top: 25px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Stats Cards */
+.stats {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: #2563eb;
+}
+
+.stat-card p {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* Product List */
+.product-list {
+  margin-top: 40px;
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}

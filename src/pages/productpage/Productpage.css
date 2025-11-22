@@ -79,3 +79,135 @@
   transform: translateY(-5px);
   transition: transform 0.3s ease;
 }
+/* Productpage.css */
+.filter-container {
+  transition: all 0.3s ease;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+}
+
+.filter-container.sticky {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 15px 0;
+}
+
+.filter-btn {
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.filter-btn:hover:not(.active) {
+  background-color: #f8f9fa;
+  border-color: #007bff;
+}
+
+.category-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.product-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+/* Productpage.css */
+.filter-container {
+  background: white;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.filter-container.sticky {
+  position: sticky;
+  top: 70px;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-bottom: 2px solid #007bff;
+}
+
+.filter-btn, .category-btn {
+  border: 2px solid #dee2e6;
+  background: white;
+  color: #495057;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover, .category-btn:hover {
+  border-color: #007bff;
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active, .category-btn.active {
+  background: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e9ecef !important;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.product-img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .filter-btn, .category-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

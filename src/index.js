@@ -15,6 +15,7 @@ import Footercomponent from './components/footercomponent/Footercomponent';
 import AboutPage from './pages/AboutPage/AboutPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import ProductDetail from './pages/ProductDetailPage/ProductDetailPage';
+import Dashboard from './pages/DashboardPage/DashboardPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,7 @@ root.render(
           <Route path="/cart" element={<CartPage />} />
           <Route path="/about" element={<AboutPage/>} />
           <Route path="/contact" element={<ContactPage/>} />
+          <Route path="/dashboard" element={<Dashboard/>} />
           <Route path="/footer" element={<Footercomponent/>} />
           <Route path='*' element={<Notfoundpage/>}/>
         </Routes>

@@ -1,10 +1,8 @@
+// ProductDetail.jsx
 import { useLocation, useNavigate } from "react-router-dom";
 import Headercomponent from "../../components/headercomponent/Headercomponent";
 import Footercomponent from "../../components/footercomponent/Footercomponent";
 import { useCart } from "../cartcontext/Cartcontext";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import "./ProductDetailPage.css";
 
 const ProductDetail = () => {
   const location = useLocation();
@@ -13,21 +11,7 @@ const ProductDetail = () => {
   const product = location.state?.product;
 
   if (!product) {
-    return (
-      <>
-        <Headercomponent />
-        <div className="container my-5 text-center">
-          <h2>Product not found</h2>
-          <button 
-            className="btn btn-primary mt-3"
-            onClick={() => navigate("/")}
-          >
-            Go Back Home
-          </button>
-        </div>
-        <Footercomponent />
-      </>
-    );
+    return <div>Product not found</div>;
   }
 
   const handleAddToCart = () => {
@@ -37,30 +21,28 @@ const ProductDetail = () => {
   return (
     <>
       <Headercomponent />
-      
       <div className="container my-5">
         <button 
-          className="btn btn-outline-secondary mb-3"
+          className="btn btn-secondary mb-3" 
           onClick={() => navigate(-1)}
         >
-          <FontAwesomeIcon icon={faArrowLeft} className="me-2" />
-          Back
+          ← Back to Products
         </button>
-
+        
         <div className="row">
           <div className="col-md-6">
-            <img
-              src={product.image}
+            <img 
+              src={product.image} 
               alt={product.name}
-              className="img-fluid rounded shadow"
-              style={{ maxHeight: "850px", objectFit: "cover", width: "100%" }}
+              className="img-fluid w-75"
             />
           </div>
           <div className="col-md-6">
-            <h1 className="fw-bold">{product.name}</h1>
-            <h3 className="text-primary my-3">US {product.price} $</h3>
-            <p className="text-muted">Size: {product.size}</p>
-            <p className="text-muted">Category: {product.category}</p>
+            <h1>{product.name}</h1>
+            <h3 className="text-primary">US ${product.price}</h3>
+            <p><strong>Size:</strong> {product.size}</p>
+            <p><strong>Category:</strong> {product.category}</p>
+            <p><strong>Type:</strong> {product.type}</p>
             
             <div className="mt-4">
               <h5>Description</h5>
@@ -70,17 +52,15 @@ const ProductDetail = () => {
               </p>
             </div>
 
-            <button
-              className="btn btn-primary btn-lg mt-4"
+            <button 
+              className="btn btn-primary btn-lg mt-3"
               onClick={handleAddToCart}
             >
-              <FontAwesomeIcon icon={faShoppingCart} className="me-2" />
               Add to Cart
             </button>
           </div>
         </div>
       </div>
-
       <Footercomponent />
     </>
   );

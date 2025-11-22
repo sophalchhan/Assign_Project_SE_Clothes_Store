@@ -142,21 +142,21 @@ const Homepage = () => {
             {/* Scrollable Row */}
             <div
               ref={(el) => (scrollRefs.current[category] = el)}
-              className="d-flex flex-nowrap overflow-x-auto py-2"
+              className="d-flex flex-nowrap overflow-x-auto py-1"
               style={{ gap: "1rem", scrollBehavior: "smooth" }}
             >
               {grouped[category].map((item) => (
                 <div
                   key={item.id}
                   className="card shadow-sm category-card"
-                  style={{ minWidth: "250px", cursor: "pointer" }}
+                  style={{ minWidth: "300px", cursor: "pointer" }}
                   onClick={() => handleProductClick(item)}
                 >
                   <img
                     src={item.image}
                     alt={item.name}
                     className="card-img-top"
-                    style={{ height: "250px", objectFit: "cover" }}
+                    style={{ height: "450px", objectFit: "cover" }}
                   />
                   <div className="card-footer bg-white">
                     <h5 className="fw-bold">{item.name}</h5>
