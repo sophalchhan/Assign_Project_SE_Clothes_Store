@@ -1,3 +1,4 @@
+/* ===== HOMEPAGE LAYOUT & STRUCTURE ===== */
 .homepage {
   background-color: #fff;
   padding: 40px 0;
@@ -20,6 +21,15 @@
   color: #000;
 }
 
+.section-title {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ===== PRODUCT CARDS & STYLING ===== */
 .product-card {
   border: none;
   transition: transform 0.3s ease;
@@ -29,6 +39,21 @@
   transform: scale(1.05);
 }
 
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.category-card img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Product image container */
 .image-wrapper {
   position: relative;
 }
@@ -40,6 +65,7 @@
   border-radius: 10px;
 }
 
+/* Discount badge styling */
 .discount-badge {
   position: absolute;
   top: 10px;
@@ -51,6 +77,7 @@
   border-radius: 4px;
 }
 
+/* Product text styling */
 .product-name {
   font-size: 0.95rem;
   margin: 10px 0;
@@ -74,40 +101,7 @@
   font-size: 0.9rem;
 }
 
-.show-more-container {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.show-more-btn {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 25px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.show-more-btn:hover {
-  background-color: #333;
-}
-/* Scrollbar style */
-::-webkit-scrollbar {
-  height: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #888;
-}
-
-.category-card img {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
+/* Text truncation utility */
 .element {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -118,11 +112,27 @@
   flex: none; /* if inside flex */
   width: 100%; /* ensure it respects container width */
 }
-/* Features Section with 3 Columns */
+
+/* ===== FEATURES SECTION STYLING ===== */
+/* Features section with gradient background */
 .features-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
+/* Feature images styling */
+.feature-img {
+  width: 100%;
+  height: 500px;     /* Fixed height for consistency */
+  object-fit: cover; /* Makes images equal size */
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.feature-img:hover {
+  transform: scale(1.03);
+}
+
+/* Feature cards with hover effects */
 .feature-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 5px;
@@ -170,7 +180,86 @@
   color: white;
 }
 
-/* Responsive adjustments */
+/* ===== BUTTON STYLING ===== */
+/* Show More button */
+.show-more-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.show-more-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #333;
+}
+
+/* Buy button styling */
+.btn-primary {
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3 !important;
+  border-color: #0056b3 !important;
+  color: white !important;
+}
+
+/* Scroll button styles */
+.btn-light {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.btn-light:hover {
+  background-color: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+/* ===== SCROLLBAR CUSTOMIZATION ===== */
+/* Custom scrollbar for webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+/* Hide scrollbar for scrollable rows */
+.d-flex::-webkit-scrollbar {
+  display: none;
+}
+
+.d-flex {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   .feature-card .card-body {
     padding: 1.5rem;
@@ -179,21 +268,4 @@
   .feature-card h4 {
     font-size: 1.2rem;
   }
-}
-.section-title {
-  font-size: 2rem;
-  letter-spacing: 1px;
-}
-
-/* FEATURES */
-.feature-img {
-  width: 100%;
-  height: 300px;     /* Choose the height you want */
-  object-fit: cover; /* Makes images equal size */
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.feature-img:hover {
-  transform: scale(1.03);
 }

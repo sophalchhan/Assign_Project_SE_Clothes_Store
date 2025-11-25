@@ -98,7 +98,7 @@ const ContactPage = () => {
     <div className="contact-page">
         <Headercomponent />
       {/* Hero Section */}
-      <section className="contact-hero">
+      {/* <section className="contact-hero">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
@@ -109,10 +109,10 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Information */}
-      <section className="contact-info py-5">
+      {/* <section className="contact-info py-5">
         <div className="container">
           <div className="row">
             {contactInfo.map((item, index) => (
@@ -129,7 +129,7 @@ const ContactPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Form & Map Section */}
       <section className="contact-main py-5 bg-light">
@@ -242,7 +242,7 @@ const ContactPage = () => {
             {/* Store Info & FAQ */}
             <div className="col-lg-4">
               {/* Store Info */}
-              <div className="card border-0 shadow-sm mb-4">
+              {/* <div className="card border-0 shadow-sm mb-4">
                 <div className="card-body p-4">
                   <div className="text-center mb-3">
                     <FontAwesomeIcon icon={faStore} className="text-primary mb-2" size="2x" />
@@ -265,10 +265,10 @@ const ContactPage = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Quick FAQ */}
-              <div className="card border-0 shadow-sm">
+              {/* <div className="card border-0 shadow-sm">
                 <div className="card-body p-4">
                   <div className="text-center mb-3">
                     <FontAwesomeIcon icon={faHeadset} className="text-primary mb-2" size="2x" />
@@ -283,14 +283,14 @@ const ContactPage = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* Map Section */}
-      <section className="map-section">
+      {/* <section className="map-section">
         <div className="container-fluid p-0">
           <div className="map-placeholder">
             <div className="map-overlay">
@@ -323,7 +323,7 @@ const ContactPage = () => {
                 </div>
               </div>
             </div>
-            {/* Note: In a real application, you would embed a Google Map or similar service here */}
+           
             <div className="map-container">
               <div className="map-fallback text-center">
                 <FontAwesomeIcon icon={faMapMarkerAlt} size="3x" className="text-muted mb-3" />
@@ -336,10 +336,10 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
-      <section className="cta-section py-5 bg-dark text-white">
+      {/* <section className="cta-section py-5 bg-dark text-white">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-8">
@@ -356,7 +356,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footercomponent />
     </div>
   );

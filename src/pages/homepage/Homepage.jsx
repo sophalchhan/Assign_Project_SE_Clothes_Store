@@ -9,128 +9,150 @@ import { useCart } from "../cartcontext/Cartcontext";
 import "./Homepage.css";
 
 const Homepage = () => {
+  // State to store clothes data fetched from API
   const [clothes, setClothes] = useState([]);
-  const carouselRef = useRef(null);
-  const scrollRefs = useRef({});
-  const { addToCart } = useCart();
-  const navigate = useNavigate();
+  
+  // Refs for carousel and scrollable sections
+  const carouselRef = useRef(null); // Reference for Bootstrap carousel
+  const scrollRefs = useRef({}); // Object to store refs for each category's scroll container
+  const { addToCart } = useCart(); // Cart context function to add items
+  const navigate = useNavigate(); // Navigation hook for routing
 
+  // useEffect hook runs once when component mounts
   useEffect(() => {
-    // Load data from json-server URL
+    // Fetch clothes data from JSON server
     fetch("http://localhost:4000/clothes")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to load clothes data");
         return res.json();
       })
-      .then((data) => setClothes(data))
-      .catch((err) => console.error(err));
+      .then((data) => setClothes(data)) // Update state with fetched data
+      .catch((err) => console.error(err)); // Handle errors
 
-    // Init Bootstrap carousel
+    // Initialize Bootstrap carousel if ref exists
     if (carouselRef.current) {
       new bootstrap.Carousel(carouselRef.current, {
-        interval: 3000,
-        ride: "carousel",
-        pause: "hover",
-        touch: true,
-        wrap: true,
+        interval: 3000, // Auto-advance every 3 seconds
+        ride: "carousel", // Start automatically
+        pause: "hover", // Pause on hover
+        touch: true, // Enable touch swiping
+        wrap: true, // Loop back to start after last slide
       });
     }
-  }, []);
+  }, []); // Empty dependency array means this runs only once on mount
 
-  // Group clothes by category
+  // Group clothes by category using reduce
+  // Creates an object where keys are categories and values are arrays of items
   const grouped = clothes.reduce((acc, item) => {
-    if (!acc[item.category]) acc[item.category] = [];
-    acc[item.category].push(item);
+    if (!acc[item.category]) acc[item.category] = []; // Initialize category array if it doesn't exist
+    acc[item.category].push(item); // Add current item to its category array
     return acc;
-  }, {});
+  }, {}); // Start with empty object
 
+  // Function to scroll left in a specific category's container
   const scrollLeft = (category) => {
     scrollRefs.current[category]?.scrollBy({ left: -300, behavior: "smooth" });
   };
 
+  // Function to scroll right in a specific category's container
   const scrollRight = (category) => {
     scrollRefs.current[category]?.scrollBy({ left: 300, behavior: "smooth" });
   };
 
+  // Handle click on product card - navigates to product detail page
   const handleProductClick = (product) => {
     navigate(`/product/${product.id}`, { state: { product } });
   };
 
+  // Handle click on Buy button - adds product to cart and stops event propagation
   const handleBuyClick = (e, product) => {
-    e.stopPropagation();
-    addToCart(product);
+    e.stopPropagation(); // Prevent triggering the card's click event
+    addToCart(product); // Add product to cart using context function
   };
 
   return (
     <>
+      {/* Header Component */}
       <Headercomponent />
 
-      {/* Hero Carousel */}
+      {/* Hero Carousel Section */}
       <div id="heroCarousel" className="carousel slide" ref={carouselRef}>
         <div className="carousel-inner my-5">
+          {/* First carousel slide (active by default) */}
           <div className="carousel-item active">
             <img
-              src="https://web.larue.com.kh/image/vcache/catalog/Women-Fashion-1920x550.webp"
-              className="d-block w-100"
+              src="https://i.pinimg.com/736x/d7/9b/cb/d79bcbecdc093cad6ca78c6e2364ab7b.jpg"
+              className="d-block w-100 "
               alt="Fashion 1"
-              style={{ height: "500px", objectFit: "cover" }}
+              style={{ height: "800px", objectFit: "cover" }}
             />
           </div>
+          {/* Second carousel slide */}
           <div className="carousel-item">
             <img
-              src="https://www.soundesign.in/updated-benisoft-projects/kuipler/img/men-fashion-banner-2.png"
+              src="https://i.pinimg.com/236x/08/26/55/0826559a27521d1e02b39615648cbb79.jpg"
               className="d-block w-100"
               alt="Fashion 2"
-              style={{ height: "500px", objectFit: "cover" }}
+              style={{ height: "900px", objectFit: "cover" }}
             />
           </div>
+          {/* Third carousel slide */}
           <div className="carousel-item">
             <img
-              src="https://www.cantonillinois.org/wp-content/uploads/purple-shop.jpg"
+              src="https://i.pinimg.com/736x/26/76/35/2676357c7681e8ac980717b9776d06d8.jpg"
               className="d-block w-100"
               alt="Fashion 3"
-              style={{ height: "500px", objectFit: "cover" }}
+              style={{ height: "800px", objectFit: "cover" }}
             />
           </div>
         </div>
       </div>
 
-      {/* FEATURES IMAGE SECTION*/}
+      {/* Features Image Section */}
       <section className="container text-center mt-5">
         <h2 className="fw-bold mb-4 section-title">FEATURES</h2>
         <div className="row g-4">
+          {/* Feature 1 */}
           <div className="col-md-4">
             <img
-              src="https://www.have-clothes-will-travel.com/wp-content/uploads/2019/05/qtq80-7bsDUb.jpeg"
+              src="https://i.pinimg.com/236x/d9/df/d8/d9dfd890e30b2dbaaf37d48c6b7d53c5.jpg"
               className="img-fluid rounded shadow-sm feature-img"
+              alt="Feature 1"
             />
           </div>
 
+          {/* Feature 2 */}
           <div className="col-md-4">
             <img
-              src="https://img.freepik.com/free-photo/shirt-mockup-concept-with-plain-clothing_23-2149448751.jpg?semt=ais_incoming&w=740&q=80"
+              src="https://i.pinimg.com/originals/55/e9/a3/55e9a37477e98cb9f0127b8e242e8769.jpg"
               className="img-fluid rounded shadow-sm feature-img"
+              alt="Feature 2"
             />
           </div>
 
+          {/* Feature 3 */}
           <div className="col-md-4">
             <img
-              src="https://media.almostmakesperfect.com/wp-content/uploads/2021/02/16135359/lesgamines-e1613749471710.jpg"
+              src="https://i.pinimg.com/736x/51/4a/91/514a91d9221f1a2ecb2eace77f9834f1.jpg"
               className="img-fluid rounded shadow-sm feature-img"
+              alt="Feature 3"
             />
           </div>
         </div>
       </section>
 
-      {/* Category Sections */}
+      {/* Category Sections - Dynamically generated from grouped data */}
       {Object.keys(grouped).length === 0 ? (
+        // Show loading message if no categories exist
         <p className="text-center my-5">Loading products...</p>
       ) : (
+        // Map through each category and create a section
         Object.keys(grouped).map((category) => (
           <div key={category} className="container position-relative my-5">
+            {/* Category Title */}
             <h2 className="mb-4 text-capitalize">{category}</h2>
 
-            {/* Left Scroll Btn */}
+            {/* Left Scroll Button */}
             <button
               className="btn btn-light position-absolute top-50 start-0 translate-middle-y shadow"
               onClick={() => scrollLeft(category)}
@@ -139,33 +161,43 @@ const Homepage = () => {
               ‹
             </button>
 
-            {/* Scrollable Row */}
+            {/* Scrollable Row for Products */}
             <div
-              ref={(el) => (scrollRefs.current[category] = el)}
+              ref={(el) => (scrollRefs.current[category] = el)} // Store ref for this category's scroll container
               className="d-flex flex-nowrap overflow-x-auto py-1"
               style={{ gap: "1rem", scrollBehavior: "smooth" }}
             >
+              {/* Map through each product in the current category */}
               {grouped[category].map((item) => (
                 <div
                   key={item.id}
                   className="card shadow-sm category-card"
                   style={{ minWidth: "300px", cursor: "pointer" }}
-                  onClick={() => handleProductClick(item)}
+                  onClick={() => handleProductClick(item)} // Navigate to product page on click
                 >
+                  {/* Product Image */}
                   <img
                     src={item.image}
                     alt={item.name}
                     className="card-img-top"
                     style={{ height: "450px", objectFit: "cover" }}
                   />
+                  {/* Product Details */}
                   <div className="card-footer bg-white">
                     <h5 className="fw-bold">{item.name}</h5>
                     <h6 className="text-muted">US {item.price} $</h6>
                     <p>Size: {item.size}</p>
 
+                    {/* Buy Button */}
                     <button
                       className="btn btn-primary mt-2 w-100"
-                      onClick={(e) => handleBuyClick(e, item)}
+                      style={{ 
+                        backgroundColor: '#007bff', 
+                        borderColor: '#007bff', 
+                        color: 'white',
+                        fontWeight: 'bold'
+                      }}
+                      onClick={(e) => handleBuyClick(e, item)} // Add to cart on click
                     >
                       <FontAwesomeIcon icon={faShoppingCart} className="me-2" />
                       Buy
@@ -175,7 +207,7 @@ const Homepage = () => {
               ))}
             </div>
 
-            {/* Right Scroll Btn */}
+            {/* Right Scroll Button */}
             <button
               className="btn btn-light position-absolute top-50 end-0 translate-middle-y shadow"
               onClick={() => scrollRight(category)}
@@ -187,6 +219,7 @@ const Homepage = () => {
         ))
       )}
 
+      {/* Footer Component */}
       <Footercomponent />
     </>
   );

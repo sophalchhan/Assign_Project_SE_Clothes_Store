@@ -11,62 +11,97 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Headercomponent from "../../components/headercomponent/Headercomponent";
 import Footercomponent from "../../components/footercomponent/Footercomponent";
+import moni from "../../asset/image/moni.jpg";
+import kanhchara from "../../asset/image/kanhchara.jpg";
+import ophal from "../../asset/image/sophal.jpg";
+import vong from "../../asset/image/vong.jpg";
+import thanat from "../../asset/image/thanat.jpg";
+import samontha from "../../asset/image/samontha.jpg";
+import dim from "../../asset/image/dim.jpg";
 import "./AboutPage.css";
 
 const AboutPage = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Khen kachara",
+      name: "Kong Moni",
       role: "Founder & CEO",
-      image: "https://scontent.fpnh11-1.fna.fbcdn.net/v/t39.30808-6/471269848_903160245310204_3646223438861718800_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeG1sjEH0oleVpOPzwbzUZTia729VZpbGOhrvb1VmlsY6PXZQoKVPN_kSRSk9OfD5f4pskLhlWZ4HtFUT-SScbTg&_nc_ohc=eimdaeXYY2EQ7kNvwEe8gFk&_nc_oc=AdmvoY21qLIBWFVtEv8G5n3SAQV1SofzhgeDWAvY_UMkjdUYVzSQrJgl-kLdpy-jXU8&_nc_zt=23&_nc_ht=scontent.fpnh11-1.fna&_nc_gid=xUFgmfrnaNaZMost9SKQtQ&oh=00_AfjsRhM5L8lN2OSjf-7QUNSwZzJ0bNw69yJ_js0ujKqeYg&oe=691CB8EA",
+      image: moni,
       description: "Passionate about sustainable fashion and creating timeless pieces."
     },
     {
       id: 2,
-      name: "Chhan sophal",
+      name: "Khen kachara",
       role: "Head Designer",
-      image: "https://scontent.fpnh11-1.fna.fbcdn.net/v/t39.30808-6/483066281_1847592922745925_2207549823140565757_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=100&ccb=1-7&_nc_sid=fe5ecc&_nc_eui2=AeH9hfnhIcheP7owuLDyTrCf8xk3GH82wQTzGTcYfzbBBC8Nt4Zo45wvsBi2XXwqwrkdkvBOw6SSH9BUyKf4xuRd&_nc_ohc=WiTEsUp8PcwQ7kNvwFHc84b&_nc_oc=AdniOXagMlbPDWrVkEb9jYfKv6FGjh0pCHIY9oLSbrTYe-dhhBRB569K6Obz8-PrtVM&_nc_zt=23&_nc_ht=scontent.fpnh11-1.fna&_nc_gid=RgJy6x4IUTgKSPHHk1IK8g&oh=00_AfgBM0J7w3LRXtry9DxulBQgxzQg9LPUUjeVSU19vW67oQ&oe=691CD9A8",
+      image: kanhchara,
       description: "Bringing innovative designs and trends to life."
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
+      name: "Chhan sophal",
       role: "Customer Experience",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+      image: ophal,
+      description: "Dedicated to ensuring every customer has an amazing shopping experience."
+    },
+    {
+      id: 4,
+      name: "Khom Sokvong",
+      role: "Customer Experience",
+      image: vong,
+      description: "Dedicated to ensuring every customer has an amazing shopping experience."
+    },
+    {
+      id: 5,
+      name: "Mot Thanat",
+      role: "Customer Experience",
+      image: thanat,
+      description: "Dedicated to ensuring every customer has an amazing shopping experience."
+    },
+    {
+      id: 6,
+      name: "Tem Samotha",
+      role: "Customer Experience",
+      image: samontha,
+      description: "Dedicated to ensuring every customer has an amazing shopping experience."
+    },
+    {
+      id: 7,
+      name: "Khlok Dim",
+      role: "Customer Experience",
+      image: dim,
       description: "Dedicated to ensuring every customer has an amazing shopping experience."
     }
   ];
 
-  const features = [
-    {
-      icon: faTruck,
-      title: "Free Shipping",
-      description: "Free shipping on all orders over $50"
-    },
-    {
-      icon: faShieldAlt,
-      title: "Secure Payment",
-      description: "Your payment information is safe and secure"
-    },
-    {
-      icon: faHeadset,
-      title: "24/7 Support",
-      description: "Round-the-clock customer support"
-    },
-    {
-      icon: faRecycle,
-      title: "Sustainable Fashion",
-      description: "Eco-friendly and ethically sourced materials"
-    }
-  ];
+  // const features = [
+  //   {
+  //     icon: faTruck,
+  //     title: "Free Shipping",
+  //     description: "Free shipping on all orders over $50"
+  //   },
+  //   {
+  //     icon: faShieldAlt,
+  //     title: "Secure Payment",
+  //     description: "Your payment information is safe and secure"
+  //   },
+  //   {
+  //     icon: faHeadset,
+  //     title: "24/7 Support",
+  //     description: "Round-the-clock customer support"
+  //   },
+  //   {
+  //     icon: faRecycle,
+  //     title: "Sustainable Fashion",
+  //     description: "Eco-friendly and ethically sourced materials"
+  //   }
+  // ];
 
-  const stats = [
-    { number: "50K+", label: "Happy Customers" },
-    { number: "5+", label: "Years Experience" },
-    { number: "100+", label: "Brand Partners" },
-    { number: "24/7", label: "Customer Support" }
-  ];
+  // const stats = [
+  //   { number: "50K+", label: "Happy Customers" },
+  //   { number: "5+", label: "Years Experience" },
+  //   { number: "100+", label: "Brand Partners" },
+  //   { number: "24/7", label: "Customer Support" }
+  // ];
 
   return (
     <div className="about-page">
@@ -78,7 +113,7 @@ const AboutPage = () => {
             <div className="col-lg-6">
               <h1 className="display-4 fw-bold mb-4">Our Story</h1>
               <p className="lead mb-4">
-                Founded in 2019, Clothes Store began with a simple mission: to provide 
+                Founded in 2025, Clothes Store began with a simple mission: to provide 
                 high-quality, sustainable fashion that makes you look good and feel even better. 
                 We believe that great style shouldn't come at the expense of our planet.
               </p>
@@ -100,7 +135,7 @@ const AboutPage = () => {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="mission-vision py-5 bg-light">
+      {/* <section className="mission-vision py-5 bg-light">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 mb-4">
@@ -131,10 +166,10 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Features Section */}
-      <section className="features py-5">
+      {/* <section className="features py-5">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-5 fw-bold mb-3">Why Choose Us</h2>
@@ -154,10 +189,10 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Stats Section */}
-      <section className="stats py-5 bg-dark text-white">
+      {/* <section className="stats py-5 bg-dark text-white">
         <div className="container">
           <div className="row text-center">
             {stats.map((stat, index) => (
@@ -170,7 +205,7 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team Section */}
       <section className="team py-5">
@@ -201,7 +236,7 @@ const AboutPage = () => {
       </section>
 
       {/* Values Section */}
-      <section className="values py-5 bg-light">
+      {/* <section className="values py-5 bg-light">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-5 fw-bold mb-3">Our Values</h2>
@@ -239,7 +274,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footercomponent />
     </div>
   );

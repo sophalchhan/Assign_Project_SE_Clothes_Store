@@ -4,8 +4,8 @@
 
 .about-hero {
   padding: 100px 0;
-  background: linear-gradient(135deg, #3d5ef4 0%, #0769e9 100%);
-  color: white;
+  /* background: linear-gradient(135deg, #3d5ef4 0%, #0769e9 100%); */
+  color: black;
 }
 
 .about-hero h1 {
@@ -63,7 +63,7 @@
 }
 
 .team-img {
-  height: 300px;
+  height:500px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
